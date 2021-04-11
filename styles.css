@@ -1,4 +1,10 @@
-h1 {
+:root {
+  --font: Arial;
+}
+
+h1,
+h2 {
+  font-family: var(--font);
 }
 /*#######Defaults#######*/
 nav,
@@ -21,6 +27,37 @@ label {
 p {
   font-size: 28px;
   line-height: 1.2;
+  font-family: var(--font);
+}
+
+p.footerTakeAction {
+  color: white;
+  text-align: center;
+}
+
+p.footerDeveloper {
+  font-size: 18px;
+  color: #5a5a5a;
+  text-align: center;
+}
+
+div.mobileStack a {
+  text-decoration: none;
+}
+
+div.mobileStack a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 5px;
+  color: #66b32d;
+}
+
+div.gameContainer iframe {
+  display: block;
+  width: 100%;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
 }
 
 article p {
@@ -28,8 +65,19 @@ article p {
   padding: 20px;
 }
 
+img {
+  display: block;
+  object-fit: scale-down;
+  width: 70%;
+  height: auto;
+}
+
 hr {
-  margin: 10px;
+  height: 5px;
+  margin-top: 10px;
+  margin-right: 10px;
+  background-color: #66b32d;
+  border: none;
 }
 .container {
   width: 100%;
@@ -49,6 +97,12 @@ hr {
   display: table;
   clear: both;
   content: "";
+}
+
+.margins {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 30px;
 }
 
 .col-1 {
@@ -100,7 +154,7 @@ nav {
 }
 
 nav ul {
-  background-color: #eee;
+  background-color: black;
   overflow: hidden;
   margin: 0;
   padding: 0;
@@ -120,13 +174,13 @@ ul.topnav li a {
   text-decoration: none;
   min-height: 16px;
   text-align: center;
+  font-family: var(--font);
   padding: 14px;
-  text-transform: uppercase;
-  color: #666;
+  color: white;
 }
 
 ul.topnav li a:hover {
-  background-color: #0000ff;
+  background-color: #66b32d;
   color: #fff;
 }
 
@@ -137,11 +191,7 @@ ul.topnav li.dropdownIcon {
 /*####### Custom Styles #######*/
 
 #section-1-gradient {
-  background-color: #076dff;
-  background: -webkit-linear-gradient(#076dff, #65a5ff);
-  background: -moz-linear-gradient(#076dff, #65a5ff);
-  background: -o-linear-gradient(#076dff, #65a5ff);
-  background: linear-gradient(#076dff, #65a5ff);
+  background-color: black;
 }
 
 div.box {
@@ -184,31 +234,54 @@ div.icon img {
 }
 
 .leftSide-col {
-  margin-left: 30%;
+  margin-left: 20%;
 }
 
 .rightSide-col {
-  margin-left: 15%;
+  margin-right: 20%;
+}
+
+.shiftLeft {
+  float: left;
+}
+
+.shiftReft {
+  float: right;
 }
 
 h1.large {
   color: white;
   font-size: 56px;
   margin: 0;
-  line-height: 70px;
+  line-height: 60px;
 }
 
 h2.large {
   color: white;
-  font-size: 40px;
+  font-size: 30px;
   margin: 0;
-  line-height: 70px;
+  line-height: normal;
+}
+
+h1.large-b {
+  color: black;
+  font-size: 56px;
+  margin: 0;
+  line-height: 60px;
+}
+
+h2.large-b {
+  color: black;
+  font-size: 30px;
+  margin: 0;
+  line-height: normal;
 }
 
 h1.section2Header {
   font-size: 50px;
   text-align: center;
   margin: 5px;
+  margin-top: 15px;
 }
 
 form h2 {
@@ -224,14 +297,21 @@ input[type="text"] {
 }
 
 .videoContainer iframe {
+  display: block;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+.videoContainer2 iframe {
   width: 80%;
   margin: 0;
   overflow: hidden;
 }
 
 footer.footers {
-  background-color: #666;
-  padding-left: 10%;
+  background-color: black;
 }
 
 footer.footers h1 {
@@ -285,7 +365,8 @@ footer.footers ul li {
   .col-6,
   .col-4,
   .col-7,
-  .col-5 {
+  .col-5,
+  .col-12 {
     width: 100%;
     margin: 0;
   }
@@ -317,7 +398,8 @@ footer.footers ul li {
   }
 
   div.leftSide-col,
-  div.rightSide-col {
+  div.rightSide-col,
+  div.col-12 {
     margin: 15px;
   }
 

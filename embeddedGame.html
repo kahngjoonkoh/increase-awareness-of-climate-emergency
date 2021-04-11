@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Climate Emergency</title> 
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="images/earth_thermometer.png">
+    </head>
+    <body>
+        <nav>
+            <ul class="topnav" id="dropdownClick">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="https://www.carbonbrief.org/mapped-how-every-part-of-the-world-has-warmed-and-could-continue-to-warm" target="_blank">CarbonBrief</a></li>
+                <li><a href="https://www.bloomberg.com/graphics/climate-change-data-green/temperature.html" target="_blank">Bloomberg Green</a></li>
+                <li><a href="https://climate.nasa.gov/" target="_blank">NASA</a></li>
+                <li><a href="https://www.unep.org/science-data" traget="_blank">UNEP</a></li>
+                <li class="topnav-right"><a href="embeddedGame.html">Nature Strikes Back</a></li>
+                <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+            </ul>
+        </nav>
+        <div class="gameContainer">
+            <iframe width="100%" height="100%" src="https://www.addictinggames.com/embed/html5-games/16717" scrolling="no"></iframe>
+        </div>
+
+        <footer class="footers">
+            <div class="row">
+                <div class="col-4 mobileStack">
+                    <a href="https://climate-emergency.com/"><img src="images/we-declare-a-climate-emergency-master-print-black-leap.png" alt="We Declare A Climate Emergency"></a>
+                </div>
+                <div class="col-4 mobileStack">
+                    <a href="https://climateemergencydeclaration.org/" target="_blank"><p class="footerTakeAction"><b>Take Action</b></p></a>
+                    </ul>
+                </div>
+                <div class="col-4 mobileStack">
+                    <p class="footerDeveloper">Developed by <b>Kahngjoon Koh</b></p>
+                </div>
+            </div>
+        
+        </footer>
+    </body>
+    <script>
+        function dropdownMenu() {
+            var x = document.getElementById("dropdownClick");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+                /*change topnav to topnav.responsive*/
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</html>
