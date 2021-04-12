@@ -99,6 +99,20 @@ hr {
   content: "";
 }
 
+.reversedRow {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.reversedRow::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
 .margins {
   margin-left: 20%;
   margin-right: 20%;
